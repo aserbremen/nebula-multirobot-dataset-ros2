@@ -1,6 +1,6 @@
 # NeBula Multi-Robot Processor ROS2
 
-Playback and analyze the [NeBula multi-robot dataset](https://github.com/NeBula-Autonomy/nebula-multirobot-dataset) with `nebula_multirobot_processor.py` in ROS2. Tested in ROS2 humble.
+Playback and analyze the [NeBula multi-robot dataset](https://github.com/NeBula-Autonomy/nebula-multirobot-dataset) with `nebula_multirobot_processor.py` in ROS2. Tested in ROS2 Humble.
 
 ## Dataset structure and preparation
 
@@ -50,6 +50,8 @@ You end up with the following folder structure, e.g. `urban` dataset. ROS2 folde
 ## Usage
 
 ### Prerequisites
+
+ROS2 needs to be installed. I tested it with [ROS2 Humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).
 
 For playing back the data you need the `pose_graph_msgs` package from the lamp repository compiled and sourced. You can find a ROS2 version of the package in this repository. Take a look at this [pose_graph_msgs README.md](pose_graph_msgs/README.md) for more information.
 
