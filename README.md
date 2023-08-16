@@ -65,22 +65,26 @@ Besides the ROS2 python packages you need the following python packages:
 
 ### Play back data of any number of robots
 
-The `nebula_multirobot_processor.py` script can be used to play back the data of multiple robots. It uses the python fire module to execute different functions from the command line. 
+The `play_rosbags` function of the `nebula_multirobot_processor.py` script can be used to play back the data of multiple robots. It uses the python fire module to execute different functions from the command line. 
 
 The processor class is a ROS2 node which reads in the .db3 files of the robots and publishes the pointcloud and odometry data. The `dataset_dir` parameter needs to be set to the path of the dataset folder [`urban`, `tunnel`, `prelim2`, `ku`]. The `rate` parameter can be used to set the playback rate. The `robot_names` parameter is a list of the robot names which should be played back. 
 
-The point cloud of each keyframe will be published together with the closest odometry message. The topics can be set in the script.  
+The point cloud of each keyframe will be published together with the closest odometry message. The topics can be set in the script.
 
 <code> python3 nebula_multirobot_processor.py play_rosbags --ros-args -p dataset_dir:=/path/to/data/dir/urban/ -p rate:=10.0 -p robot_names:="[husky1, husky4]" </code>
 
 ### Print dataset info
 
-The `nebula_multirobot_processor.py` script can be used to print information about the dataset. The `dataset_dir` parameter needs to be set. 
+The `print_info` function of the `nebula_multirobot_processor.py` script can be used to print information about the dataset. The `dataset_dir` parameter needs to be set. 
 
 <code>python3 nebula_multirobot_processor.py print_info --ros-args -p dataset_dir:=/path/to/data/dir/tunnel/ -p robot_names:="[husky3]" </code>
 
 ###  Plot 3D trajectories
 
-The `nebula_multirobot_processor.py` script can be used to plot the 3D trajectories of the robots, to get a general idea of the robots' trajectories. 
+The `plot_trajectories` function of the `nebula_multirobot_processor.py` script can be used to plot the 3D trajectories of the robots, to get a general idea of the robots' trajectories. 
 
-<code> python3 nebula_multirobot_processor.py print_info --ros-args -p dataset_dir:=/path/to/data/dir/tunnel/ -p robot_names:="[husky3, husky4]" </code>
+<code> python3 nebula_multirobot_processor.py plot_trajectories --ros-args -p dataset_dir:=/path/to/data/dir/tunnel/ -p robot_names:="[husky3, husky4]" </code>
+
+### Ground truth pose file creation
+
+The `write_odom_groundtruth function` function of the  `nebula_multirobot_processor.py` script can be used to create ground truth pose files (timestamp x y z qx qy qz qw) for the robots. However for simplicity I added the pose files in the `odom_groundtruth` of this repo. 
