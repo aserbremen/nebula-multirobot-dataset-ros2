@@ -1,6 +1,6 @@
-# Nebula Multi-Robot Processor ROS2
+# NeBula Multi-Robot Processor ROS2
 
-Playback and analyze the [Nebula multi-robot dataset](https://github.com/NeBula-Autonomy/nebula-multirobot-dataset) with `nebula_multirobot_processor.py` in ROS2. Tested in ROS2 humble.
+Playback and analyze the [NeBula multi-robot dataset](https://github.com/NeBula-Autonomy/nebula-multirobot-dataset) with `nebula_multirobot_processor.py` in ROS2. Tested in ROS2 humble.
 
 ## Dataset structure and preparation
 
