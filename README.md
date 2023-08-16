@@ -77,10 +77,10 @@ The point cloud of each keyframe will be published together with the closest odo
 
 The `nebula_multirobot_processor.py` script can be used to print information about the dataset. The `dataset_dir` parameter needs to be set. 
 
-<code>python3 nebula_multirobot_processor.py print_info --ros-args -p dataset_dir:=/data/Seafile/data/nebula/tunnel/ -p robot_names:="[husky3]" </code>
+<code>python3 nebula_multirobot_processor.py print_info --ros-args -p dataset_dir:=/path/to/data/dir/tunnel/ -p robot_names:="[husky3]" </code>
 
 ###  Plot 3D trajectories
 
 The `nebula_multirobot_processor.py` script can be used to plot the 3D trajectories of the robots, to get a general idea of the robots' trajectories. 
 
-<code> python3 nebula_multirobot_processor.py print_info --ros-args -p dataset_dir:=/data/Seafile/data/nebula/tunnel/ -p robot_names:="[husky3, husky4]" </code>
+<code> python3 nebula_multirobot_processor.py print_info --ros-args -p dataset_dir:=/path/to/data/dir/tunnel/ -p robot_names:="[husky3, husky4]" </code>
