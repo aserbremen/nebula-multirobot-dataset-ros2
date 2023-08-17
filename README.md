@@ -67,7 +67,7 @@ Besides the ROS2 python packages you need the following python packages:
 
 ### Play back data of any number of robots
 
-The `play_rosbags` function of the `nebula_multirobot_processor.py` script can be used to play back the data of multiple robots. It uses the python fire module to execute different functions from the command line. 
+The `play_rosbags` function of the `nebula_multirobot_processor.py` script can be used to play back the data of multiple robots in order of their time stamps. It uses the python fire module to execute different functions from the command line. 
 
 The processor class is a ROS2 node which reads in the .db3 files of the robots and publishes the pointcloud and odometry data. The `dataset_dir` parameter needs to be set to the path of the dataset folder [`urban`, `tunnel`, `prelim2`, `ku`]. The `rate` parameter can be used to set the playback rate. The `robot_names` parameter is a list of the robot names which should be played back. 
 
