@@ -5,7 +5,7 @@ Playback and analyze the [NeBula multi-robot dataset](https://github.com/NeBula-
 ## Dataset structure and preparation
 
 - Download the [dataset](https://github.com/NeBula-Autonomy/nebula-multirobot-dataset/blob/main/dataset.md) and extract it. 
-- Convert `robot.bag` in the `groundtruth` folder and `robot_odom.bag` in the `rosbag` ROS2 using the [rosbags](https://pypi.org/project/rosbags/) python package. 
+- Convert `robot.bag` in the `groundtruth` folder and `robot_odom.bag` in the `rosbag` folder to ROS2 using the [rosbags](https://pypi.org/project/rosbags/) python package. 
 
 <code> rosbags-convert husky4_odom.bag # for all bag files </code>
 
